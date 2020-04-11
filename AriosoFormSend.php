@@ -33,20 +33,5 @@ $oneLicense = trim($oneLicense);
 
 
 
-// следующий шаг - проверка на обязательные поля, у нас это емайл, имя и сообщение
-if( isset( $_POST['Email'] ) && is_email( $_POST['Email'] ) // is_email() - встроенная функция WP для проверки корректности емайлов
-  ) {
- 
-	$headers = array(
-		"Content-type: text/html; charset=utf-8",
-		"From: " . $_POST['nameClient'] . " <" . $_POST['Email'] . ">"
-	);
- 
-	if( wp_mail( get_option('admin_email'), 'Сообщение с сайта', wpautop( $_POST['message'] ), $headers ) ) {
-		header('Location:' . site_url('/contact?msg=success') );
-		exit;
-	}
- 
- 
-}
+
 ?>
