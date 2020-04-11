@@ -1,0 +1,68 @@
+
+.inp{
+    display: flex;
+    flex-direction: column;
+    
+    width: 280px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.inp>input, .inp>textarea{
+    margin: 5px;
+}
+.inp select{
+    text-align: left;
+    width: 100px;
+    margin: 5px;   
+    font-size: 14px;
+  }
+  .inp p {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: left;
+    width: 140px;
+    margin: 5px;   
+    font-size: 18px;
+  }
+  .inp textarea{
+    width: 95%;
+
+  }
+  .sel{
+      display: flex;
+      justify-content: space-between;    
+    height: 35px;
+    margin: 5px;   
+  }
+  form{
+    background-color:rgb(122, 200, 236);
+    /* margin: 5%; */
+  }
+  .formbar{
+    padding: 0;
+    background-color: transparent;
+    margin: 0;
+
+  }
+  
+   .sel p, .sel2 p{
+    font-size: 14px;
+   }
+   .price{
+     text-align: right;
+     margin: 0 5px 5px 0  ;
+     font-weight: bold;
+     color: red;
+     font-size: 18px;
+   }
+   .sendMas{
+     width: 100px;
+   }
+   .paddingForm{
+     display: flex;
+     flex-direction: row;
+   }
+   .rigftPaddingForm{
+    display: flex;
+    justify-content: flex-end;
+   }
+

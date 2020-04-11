@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="AriosoFormstyle.css">
+   
+</head>
+<body>
+  <iframe style="width: 718px; height: 331px;"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRixg6THePAru7UdU-AiP1aHBfOnsNU9ecwYeglCPnYu2mRtMayGglfn1hv3BMvDqWNkzQ0HeHJqXcu/pubhtml?gid=254250879&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
+     <div class="formbar">
+
+
+    <form action="" method="get" name="appeal" class="inp">
+
+      <span class="sel">      
+                <p>Выберите курс</p>
+          <select name="kurse" class="kurse" required>
+              <option value="">Выбрать</option>
+              <option value="Klavier">Klavier</option>
+              <option value="Gitarre">Gitarre</option>
+              <option value="Gesang">Gesang</option>
+              <option value="Geige">Geige</option>
+              <option value="Flote">Flote</option>
+          </select>
+      </span>
+
+      <span class="sel"> 
+        <p>Количество</p>
+        <p class="valAmount">1</p>
+          <select name="amount" class="amount" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+          </select>
+
+      </span>
+        <span class="sel"> 
+
+            <p>Длительность</p>
+            <p class="valDuration">30 min</p>
+
+              <select name="duration" class="duration" required>
+                <option value="30">30</option>
+                <option value="45">45</option>
+                <option value="60">60</option>
+              </select>
+
+        </span>
+           <span class="price">0‎ €</span>
+
+    <input type="text" name="nameClient" class="nameClient" placeholder="ФИО клиента" pattern="^[А-Яа-яЁё\s]+$" required >
+
+    <input type="tel"  name="tel" class="tel" placeholder="Номер клиента начиная с нуля" pattern="0[0-9]{9}" required > 
+
+    <input type="email" name="Email" placeholder="E-mail" required>
+
+    <textarea name="message"  cols="30" rows="4" placeholder="сообщение" ></textarea>
+
+      <div class="paddingForm">
+          <div class="leftPaddinfForm">
+             <span><input type="checkbox" name="oneLicense" class="oneLicense" required>я согласен</span>
+             <span><input type="checkbox" name="twoLicense" class="twoLicense"required disabled>Я тоже</span>
+          </div>
+      </div>
+
+        <div class="rigftPaddingForm">
+          <input type="submit" name="sendMas" class="sendMas" value="Купить" disabled>
+        </div>      
+</form>
+</div> 
+
+ <script src="/AriosoFormApp.js"></script>
+</body>
+</html>
