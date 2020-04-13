@@ -7,7 +7,6 @@
 *
 */
 
-
 include "AriosoFormSend.php";
 
 add_action( 'wp_enqueue_scripts', 'wptuts_scripts_basic' );
@@ -71,7 +70,7 @@ function ariosoEcho( $atts, $content = null ) {
         </div>
     </div>
       <div class="rigftPaddingForm">
-        <input type="submit" name="sendMas" class="sendMas" value="Купить" disabled>
+        <input type="submit" name="sendMas" class="sendMas" value="Купить">
       </div>      
 </form>
 </div> 
